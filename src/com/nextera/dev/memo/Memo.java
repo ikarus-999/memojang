@@ -105,7 +105,7 @@ public class Memo {
 	  try {
 	   BufferedReader br = new BufferedReader(new FileReader(readFile));
 
-	   // 데이터의 갯수를 취
+	   // 데이터의 갯수 세기
 	   int count = 0;
 	   String str; 
 	   while((str = br.readLine()) != null) {
@@ -137,9 +137,22 @@ public class Memo {
 	  }
 	 }
 	
-	public void modify() {
-		File file = new File(MEMO_DIR);
-		readFile();	
+	public void modify(Scanner scanner) {
+		File f.exists() = new File(MEMO_DIR);
+		readFile();
+			while(true) {
+				String line = scanner.nextLine();
+				if(line.equals("") && line.equals(EXIT)) {
+					break; //1. 아무것도 입력하지 않는다면, 기존글자를 그대로 사용
+				}else {
+					content.append("");
+					content.append(line + "\r\n"); //2. 입력한다면, 기존 내용을 삭제하고 입력한 글자를 사용.
+				}
+			}
+		
+		
+		
+		
 	}
 	public void delete() {
 		
