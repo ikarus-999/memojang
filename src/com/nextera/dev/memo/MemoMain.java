@@ -20,16 +20,17 @@ public class MemoMain {
 				memo.write(scanner);
 				break;
 				
-			case "2":
+			case "2":  //읽기모드
 				memo.list();
+				memo.readFile();
 				break;
 				
-			case "3":
+			case "3":   //수정모드
 				memo.list();
 				memo.modify();
 				break;
 				
-			case "4":
+			case "4":    //
 				memo.list();
 				memo.delete();
 				break;
