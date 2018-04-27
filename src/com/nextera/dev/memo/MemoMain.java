@@ -30,7 +30,7 @@ public class MemoMain {
 				memo.modify();
 				break;
 				
-			case "4":    //
+			case "4":    //삭제모드
 				memo.list();
 				memo.delete();
 				break;
