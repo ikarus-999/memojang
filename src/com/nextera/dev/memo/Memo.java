@@ -149,10 +149,6 @@ public class Memo {
 					content.append(line + "\r\n"); //2. 입력한다면, 기존 내용을 삭제하고 입력한 글자를 사용.
 				}
 			}
-		
-		
-		
-		
 	}
 	public void delete() {
 		
